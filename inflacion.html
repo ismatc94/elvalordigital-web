@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La inflación es el impuesto invisible que reduce tu poder adquisitivo con el tiempo. Entiende qué está pasando y qué puedes hacer.">
+    <title>Inflación, el impuesto invisible - El Valor Digital</title>
+    <link rel="canonical" href="https://elvalordigital.com/inflacion.html">
+    <meta property="og:title" content="Inflación, el impuesto invisible - El Valor Digital">
+    <meta property="og:description" content="La inflación es el impuesto invisible que reduce tu poder adquisitivo con el tiempo. Entiende qué está pasando y qué puedes hacer.">
+    <meta property="og:url" content="https://elvalordigital.com/inflacion.html">
+    <!-- comun:head -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="icon" href="assets/icon-512.png" type="image/png" sizes="512x512">
+    <link rel="stylesheet" href="Styles/main.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="El Valor Digital">
+    <meta property="og:image" content="https://elvalordigital.com/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- /comun:head -->
+</head>
+<body class="inner-page">
+    
+    <!-- comun:header -->
+    <header class="header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="El Valor Digital" class="logo-img">
+                <span class="logo-text">El Valor Digital</span>
+            </a>
+
+            <nav class="nav">
+                <a href="temas.html">Temas</a>
+                <a href="actualidad/actualidad.html" class="nav-actualidad">Actualidad</a>
+                <a href="mi-cartera.html">Mi cartera</a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- /comun:header -->
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+
+                <div class="page-content article">
+
+                    <section class="article-card article-intro">
+                        <h1>Inflación — El impuesto invisible</h1>
+
+                        <p>Casi cada año, tu dinero compra un poco menos.</p>
+
+                        <p>Aunque trabajes lo mismo.<br>
+                        O incluso más.</p>
+
+                        <p>No es casualidad.<br>
+                        No es mala suerte.</p>
+
+                        <p class="punchline"><strong>Es inflación.</strong></p>
+
+                        <p>Y si no haces nada, lo normal es que vayas perdiendo poder adquisitivo sin darte cuenta.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>¿Qué está pasando realmente?</h2>
+
+                        <p>La inflación es la subida general y continuada de los precios.</p>
+
+                        <p>No lo notas de golpe.<br>
+                        Pero con los años, tu dinero compra menos.</p>
+
+                        <div class="stat-box">
+                            <span class="stat-number">+28 %</span>
+                            <p>Un ejemplo real: según el INE, los precios en España subieron un 28 % entre enero de 2020 y septiembre de 2026. Lo que entonces costaba 1.000 €, hoy cuesta unos 1.280 €. <a href="https://www.ine.es/varipc/" target="_blank" rel="noopener">Fuente: INE, calculadora de variación del IPC</a>.</p>
+                        </div>
+
+                        <p>Crees que el problema es tu sueldo.</p>
+
+                        <p>Pero hay otra parte del problema que se ve menos:</p>
+
+                        <p class="punchline"><strong>Tu dinero vale cada vez menos.</strong></p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>La subida que no se nota</h2>
+
+                        <p>Te suben el sueldo.<br>
+                        Piensas que estás mejor.</p>
+
+                        <p>Pero pasan los meses…<br>
+                        y el dinero no te alcanza igual.</p>
+
+                        <p>Si los precios suben más rápido que tu salario,<br>
+                        no estás ganando más.</p>
+
+                        <p class="punchline"><strong>Estás perdiendo.</strong><br>
+                        Solo que más despacio.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>El error más común</h2>
+
+                        <p>Ahorrar parece lo correcto.<br>
+                        Y lo es… a corto plazo.</p>
+
+                        <p>Tener un colchón para imprevistos sigue siendo lo primero.</p>
+
+                        <p>Pero con el tiempo, ese dinero pierde valor.</p>
+
+                        <p>La cifra puede ser la misma.<br>
+                        Pero su poder no.</p>
+                    </section>
+
+                    <section class="article-card" id="calculadora-inflacion">
+                        <h2>Haz la prueba con tu dinero</h2>
+
+                        <p>Pon lo que tienes ahorrado y mira qué pasa si lo dejas parado.</p>
+
+                        <form class="calc-form calc-form-3" id="infl-form">
+                            <div class="calc-campo">
+                                <label for="infl-cantidad">Dinero guardado (€)</label>
+                                <input type="number" id="infl-cantidad" value="10000" min="0" max="10000000" step="500" inputmode="decimal">
+                            </div>
+                            <div class="calc-campo">
+                                <label for="infl-anios">Años sin moverlo</label>
+                                <input type="number" id="infl-anios" value="10" min="1" max="50" step="1" inputmode="numeric">
+                            </div>
+                            <div class="calc-campo">
+                                <label for="infl-inflacion">Inflación media anual (%)</label>
+                                <input type="number" id="infl-inflacion" value="2" min="0" max="20" step="0.5" inputmode="decimal">
+                            </div>
+                        </form>
+
+                        <div class="calc-resultados" aria-live="polite">
+                            <div class="calc-dato calc-dato-principal">
+                                <span>Dentro de <span id="infl-res-anios">-</span> años, tus <span id="infl-res-cantidad">-</span> comprarán lo que hoy</span>
+                                <output id="infl-real">-</output>
+                            </div>
+                            <div class="calc-dato">
+                                <span>Poder de compra perdido</span>
+                                <output id="infl-perdida">-</output>
+                            </div>
+                            <div class="calc-dato">
+                                <span>Lo que necesitarías para comprar lo mismo</span>
+                                <output id="infl-necesario">-</output>
+                            </div>
+                        </div>
+
+                        <div class="calc-grafico" id="infl-grafico" role="img" aria-label="Poder de compra de tu dinero año a año"></div>
+                        <div class="calc-leyenda">
+                            <span class="ley-aportado">Lo que sigue comprando</span>
+                            <span class="ley-perdido">Lo que se ha comido la inflación</span>
+                        </div>
+
+                        <p class="calc-nota">Cálculo orientativo con una inflación constante. En la realidad cambia cada año: hay años bajos y años muy altos.</p>
+                    </section>
+
+                    <section class="article-card article-summary">
+                        <h2>El punto clave</h2>
+
+                        <p>No hacer nada no es neutral.</p>
+
+                        <p class="punchline"><strong>Con inflación, el dinero parado pierde valor.</strong></p>
+
+                        <p>Guardar dinero sin moverlo<br>
+                        es como echar agua en un cubo con agujeros.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Entonces, ¿qué puedes hacer?</h2>
+
+                        <p>A largo plazo, invertir es la forma más habitual de intentar que el dinero no pierda valor.</p>
+
+                        <p><strong>Pero tiene riesgo: puedes perder parte de lo invertido, sobre todo a corto plazo.</strong></p>
+
+                        <p>No necesitas ser experto.<br>
+                        No necesitas empezar con mucho dinero.</p>
+
+                        <p>Pero sí necesitas entender lo básico.<br>
+                        Y tomar una decisión.</p>
+                    </section>
+
+                    <section class="article-card article-cta">
+                        <h2>Ahora la pregunta es simple</h2>
+
+                        <p>¿Vas a ignorarlo?<br>
+                        ¿O vas a empezar a entender cómo funciona?</p>
+
+                        <div class="page-actions">
+                            <a href="temas.html" class="btn-primary">DAR EL SIGUIENTE PASO</a>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- comun:footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="El Valor Digital" class="logo-img">
+                <span class="logo-text">El Valor Digital</span>
+            </div>
+
+            <div class="footer-links">
+                <details class="social-menu">
+                    <summary>Redes sociales</summary>
+                    <ul>
+                        <li><span class="social-soon">YouTube · Próximamente</span></li>
+                        <li><span class="social-soon">Instagram · Próximamente</span></li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 El Valor Digital
+            </div>
+
+        </div>
+
+        <p class="container footer-disclaimer">Contenido educativo. No es asesoramiento financiero. · <a href="aviso-legal.html">Aviso legal</a></p>
+    </footer>
+    <!-- /comun:footer -->
+
+    <script src="assets/js/calc-inflacion.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La blockchain explicada sin tecnicismos: un registro compartido que nadie controla, cómo funciona en Bitcoin, para qué más se usa y qué límites tiene.">
+    <title>¿Qué es la blockchain y cómo funciona? - El Valor Digital</title>
+    <link rel="canonical" href="https://elvalordigital.com/tecnologia/bitcoin/que-es-blockchain.html">
+    <meta property="og:title" content="¿Qué es la blockchain y cómo funciona? - El Valor Digital">
+    <meta property="og:description" content="La blockchain explicada sin tecnicismos: un registro compartido que nadie controla, cómo funciona en Bitcoin, para qué más se usa y qué límites tiene.">
+    <meta property="og:url" content="https://elvalordigital.com/tecnologia/bitcoin/que-es-blockchain.html">
+    <!-- comun:head -->
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <link rel="icon" href="../../assets/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+    <link rel="icon" href="../../assets/icon-512.png" type="image/png" sizes="512x512">
+    <link rel="stylesheet" href="../../Styles/main.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="El Valor Digital">
+    <meta property="og:image" content="https://elvalordigital.com/assets/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- /comun:head -->
+</head>
+<body class="inner-page section-tecnologia">
+
+    <!-- comun:header -->
+    <header class="header">
+        <div class="container header-inner">
+
+            <a href="../../index.html" class="logo">
+                <img src="../../assets/logo.png" alt="El Valor Digital" class="logo-img">
+                <span class="logo-text">El Valor Digital</span>
+            </a>
+
+            <nav class="nav">
+                <a href="../../temas.html">Temas</a>
+                <a href="../../actualidad/actualidad.html" class="nav-actualidad">Actualidad</a>
+                <a href="../../mi-cartera.html">Mi cartera</a>
+            </nav>
+
+        </div>
+    </header>
+    <!-- /comun:header -->
+
+    <main>
+        <section class="page-section">
+            <div class="container">
+
+                <div class="page-content article">
+
+                    <section class="article-card article-intro">
+                        <h1>¿Qué es la blockchain y cómo funciona?</h1>
+
+                        <p>En el artículo anterior viste qué es Bitcoin y por qué nació. Quedaba una pregunta: si no hay un banco que apunte quién tiene qué, ¿quién lo apunta? La respuesta es la <em>blockchain</em>, o cadena de bloques.</p>
+
+                        <p>Es una de esas palabras que se usan mucho y se explican poco. Aquí no hace falta saber informática: basta con entender una idea, un registro que comparten muchos y que nadie puede cambiar por su cuenta, y por qué eso tiene ventajas y también costes.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Qué es una blockchain</h2>
+
+                        <p><strong>Es un registro de operaciones del que existen muchas copias idénticas.</strong> Normalmente, quien lleva las cuentas es una sola entidad: tu banco apunta tus movimientos en su sistema, y tú confías en que lo hace bien. En una blockchain, ese registro está copiado en muchos ordenadores repartidos por el mundo, y todos se actualizan a la vez siguiendo las mismas reglas. Al conjunto de técnicas que permiten hacerlo se le llama tecnología de registros distribuidos (DLT, por sus siglas en inglés). La blockchain es el tipo más conocido.</p>
+
+                        <p>Tiene tres ideas clave:</p>
+
+                        <ul>
+                            <li><strong>Está repartido:</strong> no hay un ordenador central. Si uno se apaga o lo atacan, los demás siguen funcionando con su copia.</li>
+                            <li><strong>Se escribe por bloques:</strong> las operaciones no se apuntan una a una, sino en grupos llamados bloques. Cada bloque nuevo se engancha al anterior, y así se forma la cadena.</li>
+                            <li><strong>Es muy difícil de cambiar hacia atrás:</strong> cada bloque lleva una especie de huella digital del anterior. Si alguien modificara una operación antigua, la huella dejaría de coincidir y el resto de la red rechazaría esa versión.</li>
+                        </ul>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Cómo funciona en Bitcoin</h2>
+
+                        <p>Lo que pasa cuando alguien envía bitcoins, paso a paso:</p>
+
+                        <ul>
+                            <li><strong>1. Se anuncia la operación:</strong> quien envía firma la orden con su clave secreta y la manda a la red. La firma demuestra que es el dueño, sin enseñar la clave.</li>
+                            <li><strong>2. Se agrupa en un bloque:</strong> unos participantes llamados mineros recogen las operaciones pendientes y las juntan en un bloque candidato.</li>
+                            <li><strong>3. Se compite por añadirlo:</strong> para que su bloque sea el siguiente, cada minero tiene que resolver un problema matemático que solo se puede sacar a base de probar combinaciones, una y otra vez, con máquinas muy potentes. Es como una lotería en la que cada intento cuesta electricidad. A esto se le llama prueba de trabajo.</li>
+                            <li><strong>4. El ganador cobra:</strong> el primero que lo resuelve añade su bloque a la cadena y recibe bitcoins nuevos más las comisiones de esas operaciones. Así es como entran en circulación los bitcoins, como viste en el artículo anterior.</li>
+                            <li><strong>5. Todos lo comprueban:</strong> el resto de ordenadores verifican que el bloque cumple las reglas (que nadie gasta lo que no tiene, por ejemplo) y lo añaden a su copia.</li>
+                        </ul>
+
+                        <p><strong>Sale un bloque cada diez minutos, más o menos.</strong> Si se suman muchos mineros y los bloques salen más rápido, la red pone el problema más difícil; si se van, lo pone más fácil. Así el ritmo se mantiene, pase lo que pase.</p>
+
+                        <p><strong>Por qué es difícil hacer trampa:</strong> para cambiar una operación antigua, alguien tendría que rehacer ese bloque y todos los que vinieron después, más rápido que el resto de la red junta. Con la potencia de cálculo que hay hoy, eso sería enormemente caro. La seguridad no viene de confiar en alguien, sino de que hacer trampa cuesta más de lo que se ganaría.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Qué ha cambiado</h2>
+
+                        <p><strong>Antes, un registro fiable necesitaba a alguien de confianza en el centro.</strong> Un banco, un notario o un registro público. Si querías saber de quién era algo, preguntabas a quien llevaba las cuentas, y si ese alguien se equivocaba o desaparecía, el problema era de todos.</p>
+
+                        <p><strong>Ahora existen registros que funcionan sin dueño.</strong> Desde 2009, la blockchain de Bitcoin lleva funcionando sin que nadie la controle. A partir de ella han nacido muchas otras con reglas distintas. Algunas han dejado la prueba de trabajo por otros sistemas que gastan mucha menos energía: un estudio de la Universidad de Cambridge calcula que Ethereum, la segunda red más conocida, redujo su consumo en torno a un <strong>99,96 %</strong> al cambiar de sistema en septiembre de 2022.</p>
+
+                        <p><strong>Y los bancos centrales también la están usando, a su manera.</strong> El Banco Central Europeo hizo en 2024 más de 50 pruebas con esta tecnología y, el <strong>21 de septiembre de 2026</strong>, puso en marcha Pontes, un sistema que permite a los bancos liquidar operaciones registradas con DLT usando euros del banco central. No es una blockchain abierta como la de Bitcoin: solo participan entidades autorizadas. Lo que muestra es que la tecnología y Bitcoin son cosas distintas: se puede usar una sin la otra.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Para qué sirve y para qué no</h2>
+
+                        <p>Una blockchain tiene sentido cuando varias partes que no se fían del todo entre sí necesitan compartir un registro y nadie quiere, o puede, ser el encargado.</p>
+
+                        <p><strong>Usos que se están probando o que ya funcionan:</strong></p>
+
+                        <ul>
+                            <li><strong>Dinero digital sin intermediario,</strong> como Bitcoin.</li>
+                            <li><strong>Tokenización:</strong> representar en forma de ficha digital un bono, una acción u otro activo, para que se pueda comprar, vender y liquidar más rápido. Es en lo que trabajan el BCE y los grandes bancos.</li>
+                            <li><strong>Trazabilidad:</strong> dejar constancia de por dónde ha pasado un producto, un documento o un certificado, con fecha y sin que se pueda borrar.</li>
+                        </ul>
+
+                        <p><strong>Donde no aporta nada:</strong></p>
+
+                        <ul>
+                            <li><strong>Si ya hay alguien de confianza que lleva el registro,</strong> una base de datos normal es más rápida, más barata y más fácil de corregir. Tu banco no necesita una blockchain para apuntar tus movimientos.</li>
+                            <li><strong>Si lo que se apunta es falso,</strong> la blockchain lo guarda igual de bien. Garantiza que nadie cambia el registro después, no que lo que entró fuera verdad.</li>
+                            <li><strong>Si necesitas poder deshacer errores,</strong> como devolver un pago equivocado, lo que la hace segura juega en tu contra.</li>
+                        </ul>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Un ejemplo</h2>
+
+                        <p>Cuatro amigos comparten piso y apuntan en una libreta quién paga cada gasto.</p>
+
+                        <ul>
+                            <li><strong>Con una sola libreta,</strong> la guarda uno de ellos. Si se le pierde o apunta mal, los demás tienen que fiarse de su palabra.</li>
+                            <li><strong>Con una libreta tipo blockchain,</strong> cada uno tiene una copia. Cada semana apuntan juntos los gastos en una página nueva, que empieza con un resumen de la anterior. Si uno intenta cambiar una página antigua en su copia, no coincide con las otras tres y se descarta.</li>
+                            <li><strong>El coste:</strong> cada cambio necesita que todos lo comprueben, la libreta ocupa cuatro veces más y, si alguien apunta un gasto que no existió y los demás no lo ven a tiempo, se queda ahí para siempre.</li>
+                        </ul>
+
+                        <p>El ejemplo es inventado y simplificado. Lo que importa es el reparto: se gana no depender de nadie y se pierde rapidez, sencillez y la posibilidad de corregir.</p>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Qué te aporta a ti</h2>
+
+                        <ul>
+                            <li><strong>Entender por qué funciona Bitcoin</strong> sin un banco detrás, y por qué una operación enviada no se puede anular.</li>
+                            <li><strong>Separar la tecnología del producto:</strong> que algo use blockchain no dice nada de si es buena inversión. La tecnología puede ser sólida y el activo, muy arriesgado.</li>
+                            <li><strong>Leer las noticias con criterio:</strong> cuando un banco, un gobierno o una empresa anuncie un proyecto con «blockchain» o «DLT», sabrás qué preguntarte: ¿hacía falta, o una base de datos normal habría servido?</li>
+                            <li><strong>Detectar el reclamo:</strong> «tecnología blockchain» es una de las palabras favoritas de las <a href="../protegerte/estafas-financieras.html">estafas financieras</a> para parecer modernas y seguras.</li>
+                        </ul>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Límites y riesgos</h2>
+
+                        <ul>
+                            <li><strong>Consume mucha energía:</strong> según el Centro de Finanzas Alternativas de la Universidad de Cambridge, la red de Bitcoin consumía unos <strong>138 TWh</strong> al año en 2024. Su estimación preliminar para diciembre de 2025 es de unos <strong>190 TWh</strong>, aunque con más energía de origen bajo en carbono que antes. Son cifras de la magnitud del consumo eléctrico de un país mediano.</li>
+                            <li><strong>Es lenta:</strong> la red de Bitcoin procesa unas siete operaciones por segundo y tarda unos diez minutos en confirmar cada bloque. Cuando hay mucha demanda, las comisiones suben.</li>
+                            <li><strong>No hay marcha atrás:</strong> un error al enviar no se corrige.</li>
+                            <li><strong>La seguridad de la red no es la tuya:</strong> que la blockchain sea muy difícil de atacar no protege tu clave si la pierdes o te la roban, ni el dinero que dejes en una plataforma que quiebre o sea hackeada. La mayoría de los robos no atacan la cadena, sino a las personas y a las empresas que guardan las claves.</li>
+                            <li><strong>Muchas redes no son tan seguras como Bitcoin:</strong> una blockchain pequeña, con pocos participantes, es mucho más fácil de manipular.</li>
+                        </ul>
+                    </section>
+
+                    <section class="article-card">
+                        <h2>Qué puedes controlar tú</h2>
+
+                        <p>No decides cuánta energía gasta una red ni qué proyectos se anuncian con la palabra de moda. Lo que sí está en tu mano:</p>
+
+                        <ul>
+                            <li><strong>Preguntar qué hay detrás:</strong> quién lleva el proyecto, qué problema resuelve y si de verdad necesita una blockchain.</li>
+                            <li><strong>No confundir seguridad técnica con seguridad de tu dinero:</strong> el registro puede ser inalterable y el precio de lo que hay en él caer a la mitad.</li>
+                            <li><strong>Proteger tus accesos:</strong> si algún día tienes criptomonedas, la parte débil serás tú y tus claves. Tienes lo básico en <a href="../protegerte/seguridad-digital.html">seguridad digital</a>.</li>
+                            <li><strong>Mantener tu plan:</strong> una tecnología nueva no es motivo para cambiar una estrategia a largo plazo. Tienes <a href="../../inversion/cartera-sencilla.html">una cartera sencilla</a> como punto de partida.</li>
+                        </ul>
+
+                        <p>Invertir tiene riesgo: lo invertido puede bajar y puedes perder dinero. En criptomonedas, ese riesgo es especialmente alto, y puedes perderlo todo.</p>
+                    </section>
+
+                    <section class="article-card article-summary">
+                        <h2>La idea con la que quedarte</h2>
+
+                        <ul>
+                            <li>Una blockchain es un registro compartido, copiado en muchos ordenadores, que se escribe por bloques y es muy difícil de cambiar hacia atrás.</li>
+                            <li>En Bitcoin, la seguridad viene de que hacer trampa costaría más de lo que se ganaría. A cambio, gasta mucha energía, es lenta y no permite deshacer errores.</li>
+                            <li>La tecnología y la inversión son cosas distintas: que algo use blockchain no lo hace ni más seguro ni mejor inversión.</li>
+                        </ul>
+
+                        <p>No hace falta saber programar para entender una blockchain. Hace falta saber qué garantiza y qué no.</p>
+
+                        <div class="page-actions">
+                            <a href="riesgos-de-bitcoin.html" class="btn-primary">SIGUIENTE: LOS RIESGOS DE BITCOIN</a>
+                            <a href="../tecnologia.html" class="btn-glass">VER MÁS DE TECNOLOGÍA</a>
+                        </div>
+                    </section>
+
+                    <details class="article-card article-toggle">
+                        <summary><h2>Fuentes</h2></summary>
+
+                        <p>Datos consultados el 13 de noviembre de 2026.</p>
+
+                        <ul>
+                            <li>Satoshi Nakamoto. <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em> (31/10/2008), descripción original de la cadena de bloques y la prueba de trabajo: <a href="https://bitcoin.org/bitcoin.pdf" target="_blank" rel="noopener">https://bitcoin.org/bitcoin.pdf</a></li>
+                            <li>Banco de España, Portal del Cliente Bancario. La «tecnología DLT» en nuestras finanzas: aplicaciones y retos (15/02/2019): un registro distribuido es una base de datos con múltiples copias idénticas que se actualizan de forma sincronizada: <a href="https://clientebancario.bde.es/pcb/es/blog/La_%25E2%2580%259Ctecnologia__23e221e439ce861.html" target="_blank" rel="noopener">https://clientebancario.bde.es/pcb/es/blog/La_%25E2%2580%259Ctecnologia__23e221e439ce861.html</a></li>
+                            <li>BCE. Explicación «¿Qué es la tecnología de registros distribuidos?»: <a href="https://www.ecb.europa.eu/ecb-and-you/explainers/tell-me-more/html/distributed_ledger_technology.es.html" target="_blank" rel="noopener">https://www.ecb.europa.eu/ecb-and-you/explainers/tell-me-more/html/distributed_ledger_technology.es.html</a></li>
+                            <li>CoinDesk. Dificultad de la minería de Bitcoin: ajuste automático para mantener un bloque cada 10 minutos: <a href="https://www.coindesk.com/es/learn/bitcoin-mining-difficulty-everything-you-need-to-know" target="_blank" rel="noopener">https://www.coindesk.com/es/learn/bitcoin-mining-difficulty-everything-you-need-to-know</a></li>
+                            <li>Bitpanda Academy. El problema de la escalabilidad en la red de Bitcoin: hasta unas 7 operaciones por segundo con bloques cada 10 minutos: <a href="https://www.bitpanda.com/es/academy/el-problema-de-la-escalabilidad-en-la-red-de-bitcoin" target="_blank" rel="noopener">https://www.bitpanda.com/es/academy/el-problema-de-la-escalabilidad-en-la-red-de-bitcoin</a></li>
+                            <li>The Energy Mag. Bitcoin Power Use Jumps 38% with Greener Energy Mix (Cambridge Centre for Alternative Finance): 138 TWh en junio de 2024 y unos 190 TWh anualizados en diciembre de 2025, cifras preliminares: <a href="https://theenergymag.com/news/market-news/bitcoin-energy-consumption-mix-cambridge-eif" target="_blank" rel="noopener">https://theenergymag.com/news/market-news/bitcoin-energy-consumption-mix-cambridge-eif</a></li>
+                            <li>Cointelegraph. Estudio de Cambridge sobre el consumo de Ethereum (12/07/2026): reducción del consumo de aproximadamente un 99,96 % tras el cambio de sistema de septiembre de 2022: <a href="https://cointelegraph.com/news/ethereum-pos-energy-intensity-cambridge-study" target="_blank" rel="noopener">https://cointelegraph.com/news/ethereum-pos-energy-intensity-cambridge-study</a></li>
+                            <li>BCE, traducción del Banco de España. Nota de prensa sobre el lanzamiento de Pontes (septiembre de 2026): <a href="https://www.bde.es/f/webbe/GAP/Secciones/SalaPrensa/ComunicadosBCE/NotasInformativasBCE/26/presbce2026-131ok.pdf" target="_blank" rel="noopener">https://www.bde.es/f/webbe/GAP/Secciones/SalaPrensa/ComunicadosBCE/NotasInformativasBCE/26/presbce2026-131ok.pdf</a></li>
+                            <li>BCE, traducción del Banco de España. Plan para la liquidación de operaciones basadas en DLT con dos líneas de actuación, Pontes y Appia (01/07/2025): <a href="https://www.bde.es/f/webbe/GAP/Secciones/SalaPrensa/ComunicadosBCE/NotasInformativasBCE/25/presbce2025-76.pdf" target="_blank" rel="noopener">https://www.bde.es/f/webbe/GAP/Secciones/SalaPrensa/ComunicadosBCE/NotasInformativasBCE/25/presbce2025-76.pdf</a></li>
+                            <li>DiarioBitcoin. El BCE lanza Pontes (21/09/2026): <a href="https://www.diariobitcoin.com/blockchain/el-bce-lanza-pontes-para-llevar-las-finanzas-tokenizadas-al-dinero-de-banco-central/" target="_blank" rel="noopener">https://www.diariobitcoin.com/blockchain/el-bce-lanza-pontes-para-llevar-las-finanzas-tokenizadas-al-dinero-de-banco-central/</a></li>
+                            <li>CriptoNoticias. El BCE realizó en 2024 más de 50 pruebas de liquidación de operaciones basadas en DLT: <a href="https://www.criptonoticias.com/comunidad/bce-dinero-tokenizacion-mercados-ue/" target="_blank" rel="noopener">https://www.criptonoticias.com/comunidad/bce-dinero-tokenizacion-mercados-ue/</a></li>
+                            <li>El ejemplo del piso compartido es un caso inventado, solo para ilustrar.</li>
+                        </ul>
+                    </details>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- comun:footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                <img src="../../assets/logo.png" alt="El Valor Digital" class="logo-img">
+                <span class="logo-text">El Valor Digital</span>
+            </div>
+
+            <div class="footer-links">
+                <details class="social-menu">
+                    <summary>Redes sociales</summary>
+                    <ul>
+                        <li><span class="social-soon">YouTube · Próximamente</span></li>
+                        <li><span class="social-soon">Instagram · Próximamente</span></li>
+                    </ul>
+                </details>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 El Valor Digital
+            </div>
+
+        </div>
+
+        <p class="container footer-disclaimer">Contenido educativo. No es asesoramiento financiero. · <a href="../../aviso-legal.html">Aviso legal</a></p>
+    </footer>
+    <!-- /comun:footer -->
+</body>
+</html>
